@@ -185,16 +185,25 @@ const Servicios = () => {
 
         {/* YouTube CTA */}
         <div className="reveal opacity-0 translate-y-6 transition-all duration-700 delay-500 mt-16">
-          <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg border border-gray-100">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-              <div className="text-center lg:text-left">
-                <h3 className="text-2xl lg:text-3xl font-bold font-serif text-gray-900 mb-2">
-                  ¿Prefieres empezar con contenido gratuito?
-                </h3>
-                <p className="text-gray-600">
-                  Suscríbete a mi canal de YouTube y accede a valiosos consejos 
-                  para emprender desde casa.
-                </p>
+          <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-3xl p-8 lg:p-12 shadow-xl relative overflow-hidden">
+            {/* Decorative elements */}
+            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />
+
+            <div className="relative flex flex-col lg:flex-row items-center justify-between gap-8">
+              <div className="flex items-center gap-6">
+                <div className="hidden sm:flex w-16 h-16 bg-white/20 rounded-2xl items-center justify-center flex-shrink-0">
+                  <Video className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-center lg:text-left">
+                  <h3 className="text-2xl lg:text-3xl font-bold font-serif text-white mb-2">
+                    ¿Prefieres empezar con contenido gratuito?
+                  </h3>
+                  <p className="text-white/80">
+                    Suscríbete a mi canal de YouTube y accede a valiosos consejos 
+                    para emprender desde casa.
+                  </p>
+                </div>
               </div>
               <a
                 href="https://www.youtube.com/@creandotumejorversionconev7808"
@@ -203,7 +212,7 @@ const Servicios = () => {
               >
                 <Button
                   size="lg"
-                  className="bg-red-600 hover:bg-red-700 text-white transition-all duration-300 hover:scale-105"
+                  className="bg-white text-red-600 font-bold hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg"
                 >
                   <Video className="w-5 h-5 mr-2" />
                   Suscribirme en YouTube
